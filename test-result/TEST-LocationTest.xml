@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<testsuite failures="0" time="0.196" errors="0" skipped="0" tests="1" name="LocationTest">
+  <testcase classname="LocationTest" name="createLocations" time="0.196">
+      </testcase>
+</testsuite>

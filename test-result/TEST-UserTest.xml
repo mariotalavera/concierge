@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<testsuite failures="0" time="0.452" errors="0" skipped="0" tests="3" name="UserTest">
+  <testcase classname="UserTest" name="connectAsUser" time="0.16">
+      </testcase>
+  <testcase classname="UserTest" name="useTheLocationsRelation" time="0.16">
+      </testcase>
+  <testcase classname="UserTest" name="retrieveUser" time="0.132">
+      </testcase>
+</testsuite>

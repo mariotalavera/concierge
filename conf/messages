@@ -1,0 +1,38 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+name=Name
+users=Users
+addresslineone=Address
+addresslinetwo=(cont.)
+city=City
+state=State
+zip=Zip
+country=Country
+phone=Phone
+user=User
+firstname=First Name
+lastname=Last Name
+email=Email
+password=Password
+isAdmin=Administrator
+company=Company
+createdAt=Created at
+secure.username=Your email:
+secure.password=Your password:
+secure.signin=Log in now
+user=Client
+flete=Flete
+impuestos=Impuestos
+itbm=I.T.B.M.
+aduana=Aduana
+acarreo=Acarreo
+seguro=Seguro
+usodesistema=Uso de sistema
+itbms=I.T.B.M.S.
+guiano=Guia No.
+peso=Peso
+destination=Destination
+origin=Origin
+cost=Cost
+description=Description

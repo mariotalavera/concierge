@@ -1,0 +1,94 @@
+# you describe your data using the YAML notation here
+# and then load them using Fixtures.load("data.yml")
+
+Company(jomar):
+  name: Jomar
+  
+Company(oracle):
+  name: Oracle
+  
+Company(cadel):
+  name: Cadel
+  
+User(mario):
+  firstname: Mario
+  lastname: Talavera
+  email: mario.talavera@gmail.com
+  password: secret
+  isAdmin: true
+  company: oracle
+  
+User(edgaradmin):
+  firstname: Edgar
+  lastname: Aviles
+  email: sales@cadeltruck.com
+  password: admin
+  isAdmin: true
+  company: cadel
+    
+User(edgaruser):
+  firstname: Edgar
+  lastname: Aviles
+  email: sales@cadeltruck.com
+  password: user
+  company: cadel
+    
+User(diego):
+  firstname: Diego
+  lastname: Talavera
+  email: diego@gmail.com
+  password: secret
+  company: jomar
+  
+User(daniel):
+  firstname: Daniel
+  lastname: Talavera
+  email: daniel@gmail.com
+  password: secret
+  company: jomar
+
+Location(newHome):
+  user: diego
+  name: newHome
+  addresslineone: no street
+  addresslinetwo: null
+  city: Orlando
+  state: FL
+  zip: 32825
+  country: US
+  phone: 4075555555
+  
+Location(oldHome):
+  user: diego
+  name: oldHome
+  addresslineone: no street
+  addresslinetwo: null
+  city: Orlando
+  state: FL
+  zip: 32829
+  country: US
+  phone: 4076666666 
+
+Location(jomar):
+  user: daniel
+  name: carolina
+  addresslineone: no street
+  addresslinetwo: null
+  city: Carolina
+  state: PR
+  zip: 00985
+  country: US
+  phone: 7877777777
+
+Location(bottomofsea):
+  user: mario
+  name: atlantic ocean
+  addresslineone: very very
+  addresslinetwo: deep
+  city: Atlantis
+  state: Unknown
+  zip: 000000
+  country: US
+  phone: 4078888888
+
+  
