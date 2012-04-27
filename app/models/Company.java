@@ -14,6 +14,7 @@ public class Company extends Model {
 	public String name;
 
 //	@OneToMany//(cascade=CascadeType.ALL, mappedBy="user")
+
 //	public List<User> users = new ArrayList<User>();
 
 	public String toString() {

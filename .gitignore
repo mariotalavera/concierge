@@ -1,13 +1,3 @@
-logs
-project/project
-project/target
-target
-tmp
-.history
-dist
-
-conf/application.conf
-
 bin/
 data/
 db/
@@ -17,3 +7,4 @@ test-result/
 lib/
 tmp/
 modules/
+conf/application.conf
