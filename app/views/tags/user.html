@@ -1,0 +1,54 @@
+*{ Display a user in one of these modes: 'full', 'home' or 'teaser' }*
+ 
+<div class="post ${_as == 'teaser' ? 'teaser' : ''}">
+    <h2 class="post-title">
+        <a href="#">${_user.firstname} ${_user.lastname}</a>
+    </h2>
+    <div class="post-metadata">
+        <span class="post-author">
+        	${_user.locations.size() ?: 'No'} 
+            location${_user.locations.size().pluralize()}<br/><br/>
+        </span>
+    </div>
+    #{if _as != 'full'}
+		#{if _user.locations.size()}
+	        <div class="post-content">
+		        #{list items:_user.locations, as:'thisLocation'}
+					${thisLocation.name} <br/>
+					${thisLocation.addresslineone} <br/>
+					${thisLocation.city},
+					${thisLocation.state}
+					${thisLocation.zip} <br/>
+					 <br/>
+				#{/list}
+	        </div>
+        #{/if}
+    #{/if}
+    #{if _as != 'teaser'}
+        <div class="post-content">
+            <div class="about">Detail: </div>
+            ${_user.lastname.nl2br()}
+        </div>
+    #{/if}
+</div>
+ 
+#{if _as == 'full'}
+    <div class="comments">
+        <h3>
+            ${_user.locations.size() ?: 'no'} 
+            location${_user.locations.size().pluralize()}
+        </h3>
+        
+        #{list items:_user.locations, as:'location'}
+            <div class="comment">
+                <div class="comment-metadata">
+                    <span class="comment-author">by ${location.name},</span>
+                </div>
+                <div class="comment-content">
+                    <div class="about">Detail: </div>
+                    ${location.name.escape().nl2br()}
+                </div>
+            </div>
+        #{/list}
+    </div>
+#{/if}
