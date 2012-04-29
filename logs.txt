@@ -1,100 +1,100 @@
-2012-04-28T11:46:54+00:00 heroku[web.1]: Stopping process with SIGKILL
-2012-04-28T11:46:56+00:00 heroku[web.1]: Process exited with status 137
-2012-04-28T11:46:56+00:00 heroku[web.1]: State changed from up to down
-2012-04-28T16:53:39+00:00 heroku[web.1]: Unidling
-2012-04-28T16:53:39+00:00 heroku[web.1]: State changed from down to created
-2012-04-28T16:53:39+00:00 heroku[web.1]: State changed from created to starting
-2012-04-28T16:53:47+00:00 heroku[web.1]: Starting process with command `play run --http.port=50906 --%prod -Dprecompiled=true`
-2012-04-28T16:53:49+00:00 app[web.1]: 16:53:49,253 INFO  ~ Starting /app
-2012-04-28T16:53:49+00:00 app[web.1]: 16:53:49,260 INFO  ~ Module crud is available (/app/modules/crud)
-2012-04-28T16:53:49+00:00 app[web.1]: 16:53:49,271 INFO  ~ Module secure is available (/app/modules/secure)
-2012-04-28T16:53:49+00:00 app[web.1]: 16:53:49,532 INFO  ~ Application is precompiled
-2012-04-28T16:53:56+00:00 app[web.1]: 16:53:56,874 INFO  ~ Connected to jdbc:mysql://us-cdbr-east.cleardb.com/heroku_751141507a0e3b2?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
-2012-04-28T16:53:59+00:00 app[web.1]: 16:53:59,094 INFO  ~ Application 'concierge' is now started !
-2012-04-28T16:54:00+00:00 app[web.1]: 16:54:00,478 INFO  ~ Listening for HTTP on port 50906 ...
-2012-04-28T16:54:01+00:00 heroku[web.1]: State changed from starting to up
-2012-04-28T16:54:03+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=186ms status=200 bytes=1099
-2012-04-28T16:54:03+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=653ms status=200 bytes=1099
-2012-04-28T16:54:05+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=20ms status=200 bytes=1099
-2012-04-28T16:54:07+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=19ms status=200 bytes=1099
-2012-04-28T18:03:29+00:00 heroku[web.1]: Idling
-2012-04-28T18:03:31+00:00 heroku[web.1]: Stopping process with SIGTERM
-2012-04-28T18:03:41+00:00 heroku[web.1]: Error R12 (Exit timeout) -> Process failed to exit within 10 seconds of SIGTERM
-2012-04-28T18:03:41+00:00 heroku[web.1]: Stopping process with SIGKILL
-2012-04-28T18:03:43+00:00 heroku[web.1]: Process exited with status 137
-2012-04-28T18:03:43+00:00 heroku[web.1]: State changed from up to down
-2012-04-29T01:44:34+00:00 heroku[web.1]: Unidling
-2012-04-29T01:44:34+00:00 heroku[web.1]: State changed from down to created
-2012-04-29T01:44:35+00:00 heroku[web.1]: State changed from created to starting
-2012-04-29T01:44:41+00:00 heroku[web.1]: Starting process with command `play run --http.port=36678 --%prod -Dprecompiled=true`
-2012-04-29T01:44:42+00:00 app[web.1]: 01:44:42,478 INFO  ~ Starting /app
-2012-04-29T01:44:42+00:00 app[web.1]: 01:44:42,482 INFO  ~ Module crud is available (/app/modules/crud)
-2012-04-29T01:44:42+00:00 app[web.1]: 01:44:42,484 INFO  ~ Module secure is available (/app/modules/secure)
-2012-04-29T01:44:42+00:00 app[web.1]: 01:44:42,689 INFO  ~ Application is precompiled
-2012-04-29T01:44:49+00:00 app[web.1]: 01:44:49,414 INFO  ~ Connected to jdbc:mysql://us-cdbr-east.cleardb.com/heroku_751141507a0e3b2?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
-2012-04-29T01:44:50+00:00 app[web.1]: 01:44:50,990 INFO  ~ Application 'concierge' is now started !
-2012-04-29T01:44:51+00:00 app[web.1]: 01:44:51,731 INFO  ~ Listening for HTTP on port 36678 ...
-2012-04-29T01:44:52+00:00 heroku[web.1]: State changed from starting to up
-2012-04-29T01:44:54+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=775ms status=200 bytes=1099
-2012-04-29T01:44:54+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/public/stylesheets/main.css dyno=web.1 queue=0 wait=0ms service=117ms status=200 bytes=8499
-2012-04-29T01:44:55+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=212ms status=200 bytes=1099
-2012-04-29T01:44:56+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=99ms status=200 bytes=1099
-2012-04-29T01:44:59+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/admin/index dyno=web.1 queue=0 wait=0ms service=425ms status=200 bytes=1570
-2012-04-29T01:45:00+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/public/javascripts/jquery.tools-1.2.5.toolbox.expose.min.js dyno=web.1 queue=0 wait=0ms service=45ms status=200 bytes=2271
-2012-04-29T01:45:00+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/public/javascripts/jquery-1.4.2.min.js dyno=web.1 queue=0 wait=0ms service=120ms status=200 bytes=72173
-2012-04-29T01:45:04+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/users/list dyno=web.1 queue=0 wait=0ms service=1152ms status=200 bytes=7487
-2012-04-29T01:45:04+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/public/stylesheets/crud.css dyno=web.1 queue=0 wait=0ms service=10ms status=200 bytes=4476
-2012-04-29T02:53:35+00:00 heroku[web.1]: Idling
-2012-04-29T02:53:37+00:00 heroku[web.1]: Stopping process with SIGTERM
-2012-04-29T02:53:47+00:00 heroku[web.1]: Error R12 (Exit timeout) -> Process failed to exit within 10 seconds of SIGTERM
-2012-04-29T02:53:47+00:00 heroku[web.1]: Stopping process with SIGKILL
-2012-04-29T02:53:49+00:00 heroku[web.1]: Process exited with status 137
-2012-04-29T02:53:49+00:00 heroku[web.1]: State changed from up to down
-2012-04-29T02:53:49+00:00 heroku[web.1]: State changed from down to created
-2012-04-29T02:53:49+00:00 heroku[web.1]: State changed from created to starting
-2012-04-29T02:53:56+00:00 heroku[web.1]: Starting process with command `play run --http.port=24507 --%prod -Dprecompiled=true`
-2012-04-29T02:53:57+00:00 app[web.1]: 02:53:57,188 INFO  ~ Starting /app
-2012-04-29T02:53:57+00:00 app[web.1]: 02:53:57,192 INFO  ~ Module crud is available (/app/modules/crud)
-2012-04-29T02:53:57+00:00 app[web.1]: 02:53:57,192 INFO  ~ Module secure is available (/app/modules/secure)
-2012-04-29T02:53:57+00:00 app[web.1]: 02:53:57,412 INFO  ~ Application is precompiled
-2012-04-29T02:53:59+00:00 app[web.1]: 02:53:59,698 INFO  ~ Connected to jdbc:mysql://us-cdbr-east.cleardb.com/heroku_751141507a0e3b2?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
-2012-04-29T02:54:00+00:00 app[web.1]: 02:54:00,452 INFO  ~ Application 'concierge' is now started !
-2012-04-29T02:54:01+00:00 app[web.1]: 02:54:01,065 INFO  ~ Listening for HTTP on port 24507 ...
-2012-04-29T02:54:01+00:00 heroku[web.1]: State changed from starting to up
-2012-04-29T03:56:13+00:00 heroku[web.1]: Idling
-2012-04-29T03:56:15+00:00 heroku[web.1]: Stopping process with SIGTERM
-2012-04-29T03:56:25+00:00 heroku[web.1]: Stopping process with SIGKILL
-2012-04-29T03:56:25+00:00 heroku[web.1]: Error R12 (Exit timeout) -> Process failed to exit within 10 seconds of SIGTERM
-2012-04-29T03:56:27+00:00 heroku[web.1]: Process exited with status 137
-2012-04-29T03:56:27+00:00 heroku[web.1]: State changed from up to down
-2012-04-29T12:45:22+00:00 heroku[slugc]: Slug compilation started
-2012-04-29T12:45:39+00:00 heroku[api]: Release v9 created by mario.talavera@gmail.com
-2012-04-29T12:45:39+00:00 heroku[api]: Deploy 6f88915 by mario.talavera@gmail.com
-2012-04-29T12:45:40+00:00 heroku[slugc]: Slug compilation finished
-2012-04-29T12:45:56+00:00 heroku[web.1]: Unidling
-2012-04-29T12:45:56+00:00 heroku[web.1]: State changed from down to created
-2012-04-29T12:45:56+00:00 heroku[web.1]: State changed from created to starting
-2012-04-29T12:46:03+00:00 heroku[web.1]: Starting process with command `play run --http.port=21008 --%prod -Dprecompiled=true`
-2012-04-29T12:46:04+00:00 app[web.1]: Listening for transport dt_socket at address: 8000
-2012-04-29T12:46:04+00:00 app[web.1]: 12:46:04,422 INFO  ~ Starting /app
-2012-04-29T12:46:04+00:00 app[web.1]: 12:46:04,426 INFO  ~ Module secure is available (/app/modules/secure)
-2012-04-29T12:46:04+00:00 app[web.1]: 12:46:04,431 INFO  ~ Module crud is available (/app/modules/crud)
-2012-04-29T12:46:04+00:00 heroku[web.1]: Error R11 (Bad bind) -> Process bound to port 8000, should be 21008 (see environment variable PORT)
-2012-04-29T12:46:04+00:00 heroku[web.1]: Stopping process with SIGKILL
-2012-04-29T12:46:05+00:00 heroku[web.1]: Process exited with status 137
-2012-04-29T12:46:05+00:00 heroku[web.1]: State changed from starting to crashed
-2012-04-29T12:46:05+00:00 heroku[web.1]: State changed from crashed to created
-2012-04-29T12:46:06+00:00 heroku[web.1]: State changed from created to starting
-2012-04-29T12:46:12+00:00 heroku[web.1]: Starting process with command `play run --http.port=8300 --%prod -Dprecompiled=true`
-2012-04-29T12:46:12+00:00 app[web.1]: Listening for transport dt_socket at address: 8000
-2012-04-29T12:46:13+00:00 heroku[web.1]: Error R11 (Bad bind) -> Process bound to port 8000, should be 8300 (see environment variable PORT)
-2012-04-29T12:46:13+00:00 heroku[web.1]: Stopping process with SIGKILL
-2012-04-29T12:46:13+00:00 heroku[web.1]: Process exited with status 137
-2012-04-29T12:46:14+00:00 heroku[web.1]: State changed from starting to crashed
-2012-04-29T12:46:15+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-29T12:46:16+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
-2012-04-29T12:46:16+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/admin/index dyno= queue= wait= service= status=503 bytes=
-2012-04-29T12:46:25+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-29T12:46:25+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
-2012-04-29T12:46:26+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-29T12:46:27+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
+2012-04-29T14:04:51+00:00 heroku[web.1]: State changed from starting to crashed
+2012-04-29T14:04:51+00:00 heroku[web.1]: State changed from crashed to created
+2012-04-29T14:04:51+00:00 heroku[web.1]: State changed from created to starting
+2012-04-29T14:04:52+00:00 heroku[web.1]: Process exited with status 137
+2012-04-29T14:04:58+00:00 heroku[web.1]: Starting process with command `play run --http.port=24861 --%prod -Dprecompiled=true`
+2012-04-29T14:05:00+00:00 app[web.1]: 14:05:00,596 INFO  ~ Starting /app
+2012-04-29T14:05:00+00:00 app[web.1]: 14:05:00,615 INFO  ~ Module crud is available (/app/modules/crud)
+2012-04-29T14:05:00+00:00 app[web.1]: 14:05:00,618 INFO  ~ Module secure is available (/app/modules/secure)
+2012-04-29T14:05:01+00:00 app[web.1]: 14:05:01,502 INFO  ~ Application is precompiled
+2012-04-29T14:05:08+00:00 app[web.1]: 
+2012-04-29T14:05:08+00:00 app[web.1]: 14:05:08,233 ERROR ~ 
+2012-04-29T14:05:08+00:00 app[web.1]: Can't start in PROD mode with errors
+2012-04-29T14:05:08+00:00 app[web.1]: @6a7m8kg6c
+2012-04-29T14:05:08+00:00 app[web.1]: 
+2012-04-29T14:05:08+00:00 app[web.1]: JPA error
+2012-04-29T14:05:08+00:00 app[web.1]: A JPA error occurred (Cannot start a JPA manager without a properly configured database): No datasource configured
+2012-04-29T14:05:08+00:00 app[web.1]: 
+2012-04-29T14:05:08+00:00 app[web.1]: play.exceptions.JPAException: Cannot start a JPA manager without a properly configured database
+2012-04-29T14:05:08+00:00 app[web.1]: 	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:115)
+2012-04-29T14:05:08+00:00 app[web.1]: 	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+2012-04-29T14:05:08+00:00 app[web.1]: 	at play.Play.init(Play.java:300)
+2012-04-29T14:05:08+00:00 app[web.1]: 	at play.Play.start(Play.java:515)
+2012-04-29T14:05:08+00:00 app[web.1]: 	at play.server.Server.main(Server.java:158)
+2012-04-29T14:05:08+00:00 app[web.1]: Caused by: java.lang.NullPointerException: No datasource configured
+2012-04-29T14:05:08+00:00 app[web.1]: 	... 5 more
+2012-04-29T14:05:08+00:00 app[web.1]: Exception in thread "main" play.exceptions.JPAException: Cannot start a JPA manager without a properly configured database
+2012-04-29T14:05:08+00:00 app[web.1]: 	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:115)
+2012-04-29T14:05:08+00:00 app[web.1]: 	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+2012-04-29T14:05:08+00:00 app[web.1]: 	at play.Play.start(Play.java:515)
+2012-04-29T14:05:08+00:00 app[web.1]: 	at play.Play.init(Play.java:300)
+2012-04-29T14:05:08+00:00 app[web.1]: 	at play.server.Server.main(Server.java:158)
+2012-04-29T14:05:08+00:00 app[web.1]: Caused by: java.lang.NullPointerException: No datasource configured
+2012-04-29T14:05:08+00:00 app[web.1]: 	... 5 more
+2012-04-29T14:05:08+00:00 app[web.1]: ~  _ __ | | __ _ _  _| |
+2012-04-29T14:05:08+00:00 app[web.1]: ~        _            _ 
+2012-04-29T14:05:08+00:00 app[web.1]: ~ | '_ \| |/ _' | || |_|
+2012-04-29T14:05:08+00:00 app[web.1]: ~ |  __/|_|\____|\__ (_)
+2012-04-29T14:05:08+00:00 app[web.1]: ~ |_|            |__/   
+2012-04-29T14:05:08+00:00 app[web.1]: ~
+2012-04-29T14:05:08+00:00 app[web.1]: ~ framework ID is prod
+2012-04-29T14:05:08+00:00 app[web.1]: ~ play! 1.2.4, http://www.playframework.org
+2012-04-29T14:05:08+00:00 app[web.1]: ~
+2012-04-29T14:05:08+00:00 app[web.1]: ~ Ctrl+C to stop
+2012-04-29T14:05:08+00:00 app[web.1]: 
+2012-04-29T14:05:08+00:00 app[web.1]: ~ 
+2012-04-29T14:05:09+00:00 heroku[web.1]: Process exited with status 0
+2012-04-29T14:05:09+00:00 heroku[web.1]: State changed from starting to crashed
+2012-04-29T14:05:12+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
+2012-04-29T14:05:12+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
+2012-04-29T14:05:56+00:00 heroku[slugc]: Slug compilation started
+2012-04-29T14:06:20+00:00 heroku[api]: Release v17 created by mario.talavera@gmail.com
+2012-04-29T14:06:20+00:00 heroku[api]: Deploy db11d20 by mario.talavera@gmail.com
+2012-04-29T14:06:20+00:00 heroku[web.1]: State changed from crashed to created
+2012-04-29T14:06:20+00:00 heroku[web.1]: State changed from created to starting
+2012-04-29T14:06:20+00:00 heroku[slugc]: Slug compilation finished
+2012-04-29T14:06:27+00:00 heroku[web.1]: Starting process with command `play run --http.port=20003 --%prod -Dprecompiled=true`
+2012-04-29T14:06:30+00:00 app[web.1]: 14:06:30,646 INFO  ~ Starting /app
+2012-04-29T14:06:30+00:00 app[web.1]: 14:06:30,651 INFO  ~ Module crud is available (/app/modules/crud)
+2012-04-29T14:06:30+00:00 app[web.1]: 14:06:30,653 INFO  ~ Module secure is available (/app/modules/secure)
+2012-04-29T14:06:30+00:00 app[web.1]: 14:06:30,857 INFO  ~ Application is precompiled
+2012-04-29T14:06:33+00:00 app[web.1]: 
+2012-04-29T14:06:33+00:00 app[web.1]: 14:06:33,005 ERROR ~ 
+2012-04-29T14:06:33+00:00 app[web.1]: @6a7m8pbgo
+2012-04-29T14:06:33+00:00 app[web.1]: JPA error
+2012-04-29T14:06:33+00:00 app[web.1]: A JPA error occurred (Cannot start a JPA manager without a properly configured database): No datasource configured
+2012-04-29T14:06:33+00:00 app[web.1]: Can't start in PROD mode with errors
+2012-04-29T14:06:33+00:00 app[web.1]: play.exceptions.JPAException: Cannot start a JPA manager without a properly configured database
+2012-04-29T14:06:33+00:00 app[web.1]: 
+2012-04-29T14:06:33+00:00 app[web.1]: 
+2012-04-29T14:06:33+00:00 app[web.1]: 	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:115)
+2012-04-29T14:06:33+00:00 app[web.1]: 	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+2012-04-29T14:06:33+00:00 app[web.1]: 	at play.Play.start(Play.java:515)
+2012-04-29T14:06:33+00:00 app[web.1]: 	at play.server.Server.main(Server.java:158)
+2012-04-29T14:06:33+00:00 app[web.1]: 	at play.Play.init(Play.java:300)
+2012-04-29T14:06:33+00:00 app[web.1]: Caused by: java.lang.NullPointerException: No datasource configured
+2012-04-29T14:06:33+00:00 app[web.1]: 	... 5 more
+2012-04-29T14:06:33+00:00 app[web.1]: Exception in thread "main" play.exceptions.JPAException: Cannot start a JPA manager without a properly configured database
+2012-04-29T14:06:33+00:00 app[web.1]: 	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:115)
+2012-04-29T14:06:33+00:00 app[web.1]: 	at play.Play.start(Play.java:515)
+2012-04-29T14:06:33+00:00 app[web.1]: 	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
+2012-04-29T14:06:33+00:00 app[web.1]: 	at play.Play.init(Play.java:300)
+2012-04-29T14:06:33+00:00 app[web.1]: 	at play.server.Server.main(Server.java:158)
+2012-04-29T14:06:33+00:00 app[web.1]: Caused by: java.lang.NullPointerException: No datasource configured
+2012-04-29T14:06:33+00:00 app[web.1]: 	... 5 more
+2012-04-29T14:06:33+00:00 app[web.1]: ~  _ __ | | __ _ _  _| |
+2012-04-29T14:06:33+00:00 app[web.1]: ~ |  __/|_|\____|\__ (_)
+2012-04-29T14:06:33+00:00 app[web.1]: ~        _            _ 
+2012-04-29T14:06:33+00:00 app[web.1]: ~ | '_ \| |/ _' | || |_|
+2012-04-29T14:06:33+00:00 app[web.1]: ~
+2012-04-29T14:06:33+00:00 app[web.1]: ~ |_|            |__/   
+2012-04-29T14:06:33+00:00 app[web.1]: ~ play! 1.2.4, http://www.playframework.org
+2012-04-29T14:06:33+00:00 app[web.1]: ~ framework ID is prod
+2012-04-29T14:06:33+00:00 app[web.1]: ~ Ctrl+C to stop
+2012-04-29T14:06:33+00:00 app[web.1]: ~
+2012-04-29T14:06:33+00:00 app[web.1]: ~ 
+2012-04-29T14:06:33+00:00 app[web.1]: 
+2012-04-29T14:06:34+00:00 heroku[web.1]: Process exited with status 0
+2012-04-29T14:06:34+00:00 heroku[web.1]: State changed from starting to crashed
+2012-04-29T14:06:35+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
+2012-04-29T14:06:36+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
