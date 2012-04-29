@@ -1,100 +1,100 @@
-2012-04-28T01:15:52+00:00 app[web.1]: 	at Invocation.HTTP Request(Play!)
-2012-04-28T01:15:52+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=24ms status=404 bytes=313
-2012-04-28T01:16:09+00:00 app[web.1]: 01:16:09,323 ERROR ~ 
-2012-04-28T01:16:09+00:00 app[web.1]: 
-2012-04-28T01:16:09+00:00 app[web.1]: @6a7b4ichc
-2012-04-28T01:16:09+00:00 app[web.1]: Internal Server Error (500) for request GET /shipments/blank
-2012-04-28T01:16:09+00:00 app[web.1]: 
-2012-04-28T01:16:09+00:00 app[web.1]: Template not found (In /app/controllers/Shipments.java around line 39)
-2012-04-28T01:16:09+00:00 app[web.1]: 
-2012-04-28T01:16:09+00:00 app[web.1]: The template Shipments/blank.html does not exist.
-2012-04-28T01:16:09+00:00 app[web.1]: play.exceptions.TemplateNotFoundException: Template not found : Shipments/blank.html
-2012-04-28T01:16:09+00:00 app[web.1]: 	at play.mvc.Controller.renderTemplate(Controller.java:667)
-2012-04-28T01:16:09+00:00 app[web.1]: 	at play.mvc.Controller.renderTemplate(Controller.java:640)
-2012-04-28T01:16:09+00:00 app[web.1]: 	at controllers.Shipments.blank(Shipments.java:39)
-2012-04-28T01:16:09+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:548)
-2012-04-28T01:16:09+00:00 app[web.1]: 	at play.mvc.Controller.render(Controller.java:695)
-2012-04-28T01:16:09+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:502)
-2012-04-28T01:16:09+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:478)
-2012-04-28T01:16:09+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:473)
-2012-04-28T01:16:09+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
-2012-04-28T01:16:09+00:00 app[web.1]: 	at Invocation.HTTP Request(Play!)
-2012-04-28T01:16:09+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/shipments/blank dyno=web.1 queue=0 wait=0ms service=73ms status=500 bytes=417
-2012-04-28T01:16:09+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=16ms status=404 bytes=313
-2012-04-28T01:16:13+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=8ms status=404 bytes=313
-2012-04-28T01:16:15+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/locations/list dyno=web.1 queue=0 wait=0ms service=215ms status=500 bytes=417
-2012-04-28T01:16:15+00:00 app[web.1]: Internal Server Error (500) for request GET /locations/list
-2012-04-28T01:16:15+00:00 app[web.1]: 01:16:15,894 ERROR ~ 
-2012-04-28T01:16:15+00:00 app[web.1]: 
-2012-04-28T01:16:15+00:00 app[web.1]: @6a7b4iche
-2012-04-28T01:16:15+00:00 app[web.1]: 
-2012-04-28T01:16:15+00:00 app[web.1]: 
-2012-04-28T01:16:15+00:00 app[web.1]: The template Locations/list.html does not exist.
-2012-04-28T01:16:15+00:00 app[web.1]: Template not found (In /app/controllers/Locations.java around line 36)
-2012-04-28T01:16:15+00:00 app[web.1]: play.exceptions.TemplateNotFoundException: Template not found : Locations/list.html
-2012-04-28T01:16:15+00:00 app[web.1]: 	at play.mvc.Controller.renderTemplate(Controller.java:667)
-2012-04-28T01:16:15+00:00 app[web.1]: 	at controllers.Locations.list(Locations.java:36)
-2012-04-28T01:16:15+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:548)
-2012-04-28T01:16:15+00:00 app[web.1]: 	at play.mvc.Controller.renderTemplate(Controller.java:640)
-2012-04-28T01:16:15+00:00 app[web.1]: 	at play.mvc.Controller.render(Controller.java:695)
-2012-04-28T01:16:15+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:502)
-2012-04-28T01:16:15+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:478)
-2012-04-28T01:16:15+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
-2012-04-28T01:16:15+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:473)
-2012-04-28T01:16:15+00:00 app[web.1]: 	at Invocation.HTTP Request(Play!)
-2012-04-28T01:16:16+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=17ms status=404 bytes=313
-2012-04-28T01:16:21+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/companies/list dyno=web.1 queue=0 wait=0ms service=332ms status=200 bytes=3289
-2012-04-28T01:16:21+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/public/stylesheets/crud.css dyno=web.1 queue=0 wait=0ms service=9ms status=304 bytes=0
-2012-04-28T01:16:24+00:00 app[web.1]: 01:16:24,307 ERROR ~ 
-2012-04-28T01:16:24+00:00 app[web.1]: 
-2012-04-28T01:16:24+00:00 app[web.1]: Internal Server Error (500) for request GET /users/list
-2012-04-28T01:16:24+00:00 app[web.1]: @6a7b4ichj
-2012-04-28T01:16:24+00:00 app[web.1]: 
-2012-04-28T01:16:24+00:00 app[web.1]: Template not found (In /app/controllers/Users.java around line 31)
-2012-04-28T01:16:24+00:00 app[web.1]: The template Users/list.html does not exist.
-2012-04-28T01:16:24+00:00 app[web.1]: 
-2012-04-28T01:16:24+00:00 app[web.1]: play.exceptions.TemplateNotFoundException: Template not found : Users/list.html
-2012-04-28T01:16:24+00:00 app[web.1]: 	at play.mvc.Controller.renderTemplate(Controller.java:640)
-2012-04-28T01:16:24+00:00 app[web.1]: 	at play.mvc.Controller.renderTemplate(Controller.java:667)
-2012-04-28T01:16:24+00:00 app[web.1]: 	at controllers.Users.list(Users.java:31)
-2012-04-28T01:16:24+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:548)
-2012-04-28T01:16:24+00:00 app[web.1]: 	at play.mvc.Controller.render(Controller.java:695)
-2012-04-28T01:16:24+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:502)
-2012-04-28T01:16:24+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:478)
-2012-04-28T01:16:24+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:473)
-2012-04-28T01:16:24+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
-2012-04-28T01:16:24+00:00 app[web.1]: 	at Invocation.HTTP Request(Play!)
-2012-04-28T01:16:24+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/users/list dyno=web.1 queue=0 wait=0ms service=202ms status=500 bytes=417
-2012-04-28T01:16:24+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=6ms status=404 bytes=313
-2012-04-28T01:18:15+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/secure/logout dyno=web.1 queue=0 wait=0ms service=21ms status=302 bytes=0
-2012-04-28T01:18:15+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=20ms status=200 bytes=1099
-2012-04-28T01:18:15+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/public/stylesheets/main.css dyno=web.1 queue=0 wait=0ms service=5ms status=304 bytes=0
-2012-04-28T01:18:17+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/admin/index dyno=web.1 queue=0 wait=0ms service=83ms status=302 bytes=0
-2012-04-28T01:18:17+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/secure/login dyno=web.1 queue=0 wait=0ms service=161ms status=200 bytes=1269
-2012-04-28T01:18:17+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/public/stylesheets/secure.css dyno=web.1 queue=0 wait=0ms service=16ms status=200 bytes=1203
-2012-04-28T01:18:17+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=11ms status=404 bytes=313
-2012-04-28T01:18:23+00:00 heroku[router]: POST furious-mist-5726.herokuapp.com/secure/authenticate dyno=web.1 queue=0 wait=0ms service=75ms status=302 bytes=0
-2012-04-28T01:18:23+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/admin/index dyno=web.1 queue=0 wait=0ms service=46ms status=200 bytes=1570
-2012-04-28T01:18:24+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/public/javascripts/jquery.tools-1.2.5.toolbox.expose.min.js dyno=web.1 queue=0 wait=0ms service=7ms status=304 bytes=0
-2012-04-28T01:18:27+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/companies/list dyno=web.1 queue=0 wait=0ms service=190ms status=200 bytes=3289
-2012-04-28T01:18:29+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/locations/list dyno=web.1 queue=0 wait=0ms service=66ms status=500 bytes=417
-2012-04-28T01:18:29+00:00 app[web.1]: 01:18:29,639 ERROR ~ 
-2012-04-28T01:18:29+00:00 app[web.1]: 
-2012-04-28T01:18:29+00:00 app[web.1]: 
-2012-04-28T01:18:29+00:00 app[web.1]: Internal Server Error (500) for request GET /locations/list
-2012-04-28T01:18:29+00:00 app[web.1]: Template not found (In /app/controllers/Locations.java around line 36)
-2012-04-28T01:18:29+00:00 app[web.1]: @6a7b4ichp
-2012-04-28T01:18:29+00:00 app[web.1]: play.exceptions.TemplateNotFoundException: Template not found : Locations/list.html
-2012-04-28T01:18:29+00:00 app[web.1]: The template Locations/list.html does not exist.
-2012-04-28T01:18:29+00:00 app[web.1]: 
-2012-04-28T01:18:29+00:00 app[web.1]: 	at play.mvc.Controller.renderTemplate(Controller.java:667)
-2012-04-28T01:18:29+00:00 app[web.1]: 	at play.mvc.Controller.renderTemplate(Controller.java:640)
-2012-04-28T01:18:29+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:548)
-2012-04-28T01:18:29+00:00 app[web.1]: 	at play.mvc.Controller.render(Controller.java:695)
-2012-04-28T01:18:29+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:502)
-2012-04-28T01:18:29+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
-2012-04-28T01:18:29+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:478)
-2012-04-28T01:18:29+00:00 app[web.1]: 	at Invocation.HTTP Request(Play!)
-2012-04-28T01:18:29+00:00 app[web.1]: 	at controllers.Locations.list(Locations.java:36)
-2012-04-28T01:18:29+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:473)
-2012-04-28T01:18:29+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=6ms status=404 bytes=313
+2012-04-28T11:46:54+00:00 heroku[web.1]: Stopping process with SIGKILL
+2012-04-28T11:46:56+00:00 heroku[web.1]: Process exited with status 137
+2012-04-28T11:46:56+00:00 heroku[web.1]: State changed from up to down
+2012-04-28T16:53:39+00:00 heroku[web.1]: Unidling
+2012-04-28T16:53:39+00:00 heroku[web.1]: State changed from down to created
+2012-04-28T16:53:39+00:00 heroku[web.1]: State changed from created to starting
+2012-04-28T16:53:47+00:00 heroku[web.1]: Starting process with command `play run --http.port=50906 --%prod -Dprecompiled=true`
+2012-04-28T16:53:49+00:00 app[web.1]: 16:53:49,253 INFO  ~ Starting /app
+2012-04-28T16:53:49+00:00 app[web.1]: 16:53:49,260 INFO  ~ Module crud is available (/app/modules/crud)
+2012-04-28T16:53:49+00:00 app[web.1]: 16:53:49,271 INFO  ~ Module secure is available (/app/modules/secure)
+2012-04-28T16:53:49+00:00 app[web.1]: 16:53:49,532 INFO  ~ Application is precompiled
+2012-04-28T16:53:56+00:00 app[web.1]: 16:53:56,874 INFO  ~ Connected to jdbc:mysql://us-cdbr-east.cleardb.com/heroku_751141507a0e3b2?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
+2012-04-28T16:53:59+00:00 app[web.1]: 16:53:59,094 INFO  ~ Application 'concierge' is now started !
+2012-04-28T16:54:00+00:00 app[web.1]: 16:54:00,478 INFO  ~ Listening for HTTP on port 50906 ...
+2012-04-28T16:54:01+00:00 heroku[web.1]: State changed from starting to up
+2012-04-28T16:54:03+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=186ms status=200 bytes=1099
+2012-04-28T16:54:03+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=653ms status=200 bytes=1099
+2012-04-28T16:54:05+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=20ms status=200 bytes=1099
+2012-04-28T16:54:07+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=19ms status=200 bytes=1099
+2012-04-28T18:03:29+00:00 heroku[web.1]: Idling
+2012-04-28T18:03:31+00:00 heroku[web.1]: Stopping process with SIGTERM
+2012-04-28T18:03:41+00:00 heroku[web.1]: Error R12 (Exit timeout) -> Process failed to exit within 10 seconds of SIGTERM
+2012-04-28T18:03:41+00:00 heroku[web.1]: Stopping process with SIGKILL
+2012-04-28T18:03:43+00:00 heroku[web.1]: Process exited with status 137
+2012-04-28T18:03:43+00:00 heroku[web.1]: State changed from up to down
+2012-04-29T01:44:34+00:00 heroku[web.1]: Unidling
+2012-04-29T01:44:34+00:00 heroku[web.1]: State changed from down to created
+2012-04-29T01:44:35+00:00 heroku[web.1]: State changed from created to starting
+2012-04-29T01:44:41+00:00 heroku[web.1]: Starting process with command `play run --http.port=36678 --%prod -Dprecompiled=true`
+2012-04-29T01:44:42+00:00 app[web.1]: 01:44:42,478 INFO  ~ Starting /app
+2012-04-29T01:44:42+00:00 app[web.1]: 01:44:42,482 INFO  ~ Module crud is available (/app/modules/crud)
+2012-04-29T01:44:42+00:00 app[web.1]: 01:44:42,484 INFO  ~ Module secure is available (/app/modules/secure)
+2012-04-29T01:44:42+00:00 app[web.1]: 01:44:42,689 INFO  ~ Application is precompiled
+2012-04-29T01:44:49+00:00 app[web.1]: 01:44:49,414 INFO  ~ Connected to jdbc:mysql://us-cdbr-east.cleardb.com/heroku_751141507a0e3b2?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
+2012-04-29T01:44:50+00:00 app[web.1]: 01:44:50,990 INFO  ~ Application 'concierge' is now started !
+2012-04-29T01:44:51+00:00 app[web.1]: 01:44:51,731 INFO  ~ Listening for HTTP on port 36678 ...
+2012-04-29T01:44:52+00:00 heroku[web.1]: State changed from starting to up
+2012-04-29T01:44:54+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=775ms status=200 bytes=1099
+2012-04-29T01:44:54+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/public/stylesheets/main.css dyno=web.1 queue=0 wait=0ms service=117ms status=200 bytes=8499
+2012-04-29T01:44:55+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=212ms status=200 bytes=1099
+2012-04-29T01:44:56+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=99ms status=200 bytes=1099
+2012-04-29T01:44:59+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/admin/index dyno=web.1 queue=0 wait=0ms service=425ms status=200 bytes=1570
+2012-04-29T01:45:00+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/public/javascripts/jquery.tools-1.2.5.toolbox.expose.min.js dyno=web.1 queue=0 wait=0ms service=45ms status=200 bytes=2271
+2012-04-29T01:45:00+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/public/javascripts/jquery-1.4.2.min.js dyno=web.1 queue=0 wait=0ms service=120ms status=200 bytes=72173
+2012-04-29T01:45:04+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/users/list dyno=web.1 queue=0 wait=0ms service=1152ms status=200 bytes=7487
+2012-04-29T01:45:04+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/public/stylesheets/crud.css dyno=web.1 queue=0 wait=0ms service=10ms status=200 bytes=4476
+2012-04-29T02:53:35+00:00 heroku[web.1]: Idling
+2012-04-29T02:53:37+00:00 heroku[web.1]: Stopping process with SIGTERM
+2012-04-29T02:53:47+00:00 heroku[web.1]: Error R12 (Exit timeout) -> Process failed to exit within 10 seconds of SIGTERM
+2012-04-29T02:53:47+00:00 heroku[web.1]: Stopping process with SIGKILL
+2012-04-29T02:53:49+00:00 heroku[web.1]: Process exited with status 137
+2012-04-29T02:53:49+00:00 heroku[web.1]: State changed from up to down
+2012-04-29T02:53:49+00:00 heroku[web.1]: State changed from down to created
+2012-04-29T02:53:49+00:00 heroku[web.1]: State changed from created to starting
+2012-04-29T02:53:56+00:00 heroku[web.1]: Starting process with command `play run --http.port=24507 --%prod -Dprecompiled=true`
+2012-04-29T02:53:57+00:00 app[web.1]: 02:53:57,188 INFO  ~ Starting /app
+2012-04-29T02:53:57+00:00 app[web.1]: 02:53:57,192 INFO  ~ Module crud is available (/app/modules/crud)
+2012-04-29T02:53:57+00:00 app[web.1]: 02:53:57,192 INFO  ~ Module secure is available (/app/modules/secure)
+2012-04-29T02:53:57+00:00 app[web.1]: 02:53:57,412 INFO  ~ Application is precompiled
+2012-04-29T02:53:59+00:00 app[web.1]: 02:53:59,698 INFO  ~ Connected to jdbc:mysql://us-cdbr-east.cleardb.com/heroku_751141507a0e3b2?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
+2012-04-29T02:54:00+00:00 app[web.1]: 02:54:00,452 INFO  ~ Application 'concierge' is now started !
+2012-04-29T02:54:01+00:00 app[web.1]: 02:54:01,065 INFO  ~ Listening for HTTP on port 24507 ...
+2012-04-29T02:54:01+00:00 heroku[web.1]: State changed from starting to up
+2012-04-29T03:56:13+00:00 heroku[web.1]: Idling
+2012-04-29T03:56:15+00:00 heroku[web.1]: Stopping process with SIGTERM
+2012-04-29T03:56:25+00:00 heroku[web.1]: Stopping process with SIGKILL
+2012-04-29T03:56:25+00:00 heroku[web.1]: Error R12 (Exit timeout) -> Process failed to exit within 10 seconds of SIGTERM
+2012-04-29T03:56:27+00:00 heroku[web.1]: Process exited with status 137
+2012-04-29T03:56:27+00:00 heroku[web.1]: State changed from up to down
+2012-04-29T12:45:22+00:00 heroku[slugc]: Slug compilation started
+2012-04-29T12:45:39+00:00 heroku[api]: Release v9 created by mario.talavera@gmail.com
+2012-04-29T12:45:39+00:00 heroku[api]: Deploy 6f88915 by mario.talavera@gmail.com
+2012-04-29T12:45:40+00:00 heroku[slugc]: Slug compilation finished
+2012-04-29T12:45:56+00:00 heroku[web.1]: Unidling
+2012-04-29T12:45:56+00:00 heroku[web.1]: State changed from down to created
+2012-04-29T12:45:56+00:00 heroku[web.1]: State changed from created to starting
+2012-04-29T12:46:03+00:00 heroku[web.1]: Starting process with command `play run --http.port=21008 --%prod -Dprecompiled=true`
+2012-04-29T12:46:04+00:00 app[web.1]: Listening for transport dt_socket at address: 8000
+2012-04-29T12:46:04+00:00 app[web.1]: 12:46:04,422 INFO  ~ Starting /app
+2012-04-29T12:46:04+00:00 app[web.1]: 12:46:04,426 INFO  ~ Module secure is available (/app/modules/secure)
+2012-04-29T12:46:04+00:00 app[web.1]: 12:46:04,431 INFO  ~ Module crud is available (/app/modules/crud)
+2012-04-29T12:46:04+00:00 heroku[web.1]: Error R11 (Bad bind) -> Process bound to port 8000, should be 21008 (see environment variable PORT)
+2012-04-29T12:46:04+00:00 heroku[web.1]: Stopping process with SIGKILL
+2012-04-29T12:46:05+00:00 heroku[web.1]: Process exited with status 137
+2012-04-29T12:46:05+00:00 heroku[web.1]: State changed from starting to crashed
+2012-04-29T12:46:05+00:00 heroku[web.1]: State changed from crashed to created
+2012-04-29T12:46:06+00:00 heroku[web.1]: State changed from created to starting
+2012-04-29T12:46:12+00:00 heroku[web.1]: Starting process with command `play run --http.port=8300 --%prod -Dprecompiled=true`
+2012-04-29T12:46:12+00:00 app[web.1]: Listening for transport dt_socket at address: 8000
+2012-04-29T12:46:13+00:00 heroku[web.1]: Error R11 (Bad bind) -> Process bound to port 8000, should be 8300 (see environment variable PORT)
+2012-04-29T12:46:13+00:00 heroku[web.1]: Stopping process with SIGKILL
+2012-04-29T12:46:13+00:00 heroku[web.1]: Process exited with status 137
+2012-04-29T12:46:14+00:00 heroku[web.1]: State changed from starting to crashed
+2012-04-29T12:46:15+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
+2012-04-29T12:46:16+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
+2012-04-29T12:46:16+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/admin/index dyno= queue= wait= service= status=503 bytes=
+2012-04-29T12:46:25+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
+2012-04-29T12:46:25+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
+2012-04-29T12:46:26+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
+2012-04-29T12:46:27+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
