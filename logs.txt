@@ -1,100 +1,100 @@
-2012-04-29T14:04:51+00:00 heroku[web.1]: State changed from starting to crashed
-2012-04-29T14:04:51+00:00 heroku[web.1]: State changed from crashed to created
-2012-04-29T14:04:51+00:00 heroku[web.1]: State changed from created to starting
-2012-04-29T14:04:52+00:00 heroku[web.1]: Process exited with status 137
-2012-04-29T14:04:58+00:00 heroku[web.1]: Starting process with command `play run --http.port=24861 --%prod -Dprecompiled=true`
-2012-04-29T14:05:00+00:00 app[web.1]: 14:05:00,596 INFO  ~ Starting /app
-2012-04-29T14:05:00+00:00 app[web.1]: 14:05:00,615 INFO  ~ Module crud is available (/app/modules/crud)
-2012-04-29T14:05:00+00:00 app[web.1]: 14:05:00,618 INFO  ~ Module secure is available (/app/modules/secure)
-2012-04-29T14:05:01+00:00 app[web.1]: 14:05:01,502 INFO  ~ Application is precompiled
-2012-04-29T14:05:08+00:00 app[web.1]: 
-2012-04-29T14:05:08+00:00 app[web.1]: 14:05:08,233 ERROR ~ 
-2012-04-29T14:05:08+00:00 app[web.1]: Can't start in PROD mode with errors
-2012-04-29T14:05:08+00:00 app[web.1]: @6a7m8kg6c
-2012-04-29T14:05:08+00:00 app[web.1]: 
-2012-04-29T14:05:08+00:00 app[web.1]: JPA error
-2012-04-29T14:05:08+00:00 app[web.1]: A JPA error occurred (Cannot start a JPA manager without a properly configured database): No datasource configured
-2012-04-29T14:05:08+00:00 app[web.1]: 
-2012-04-29T14:05:08+00:00 app[web.1]: play.exceptions.JPAException: Cannot start a JPA manager without a properly configured database
-2012-04-29T14:05:08+00:00 app[web.1]: 	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:115)
-2012-04-29T14:05:08+00:00 app[web.1]: 	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
-2012-04-29T14:05:08+00:00 app[web.1]: 	at play.Play.init(Play.java:300)
-2012-04-29T14:05:08+00:00 app[web.1]: 	at play.Play.start(Play.java:515)
-2012-04-29T14:05:08+00:00 app[web.1]: 	at play.server.Server.main(Server.java:158)
-2012-04-29T14:05:08+00:00 app[web.1]: Caused by: java.lang.NullPointerException: No datasource configured
-2012-04-29T14:05:08+00:00 app[web.1]: 	... 5 more
-2012-04-29T14:05:08+00:00 app[web.1]: Exception in thread "main" play.exceptions.JPAException: Cannot start a JPA manager without a properly configured database
-2012-04-29T14:05:08+00:00 app[web.1]: 	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:115)
-2012-04-29T14:05:08+00:00 app[web.1]: 	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
-2012-04-29T14:05:08+00:00 app[web.1]: 	at play.Play.start(Play.java:515)
-2012-04-29T14:05:08+00:00 app[web.1]: 	at play.Play.init(Play.java:300)
-2012-04-29T14:05:08+00:00 app[web.1]: 	at play.server.Server.main(Server.java:158)
-2012-04-29T14:05:08+00:00 app[web.1]: Caused by: java.lang.NullPointerException: No datasource configured
-2012-04-29T14:05:08+00:00 app[web.1]: 	... 5 more
-2012-04-29T14:05:08+00:00 app[web.1]: ~  _ __ | | __ _ _  _| |
-2012-04-29T14:05:08+00:00 app[web.1]: ~        _            _ 
-2012-04-29T14:05:08+00:00 app[web.1]: ~ | '_ \| |/ _' | || |_|
-2012-04-29T14:05:08+00:00 app[web.1]: ~ |  __/|_|\____|\__ (_)
-2012-04-29T14:05:08+00:00 app[web.1]: ~ |_|            |__/   
-2012-04-29T14:05:08+00:00 app[web.1]: ~
-2012-04-29T14:05:08+00:00 app[web.1]: ~ framework ID is prod
-2012-04-29T14:05:08+00:00 app[web.1]: ~ play! 1.2.4, http://www.playframework.org
-2012-04-29T14:05:08+00:00 app[web.1]: ~
-2012-04-29T14:05:08+00:00 app[web.1]: ~ Ctrl+C to stop
-2012-04-29T14:05:08+00:00 app[web.1]: 
-2012-04-29T14:05:08+00:00 app[web.1]: ~ 
-2012-04-29T14:05:09+00:00 heroku[web.1]: Process exited with status 0
-2012-04-29T14:05:09+00:00 heroku[web.1]: State changed from starting to crashed
-2012-04-29T14:05:12+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-29T14:05:12+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
-2012-04-29T14:05:56+00:00 heroku[slugc]: Slug compilation started
-2012-04-29T14:06:20+00:00 heroku[api]: Release v17 created by mario.talavera@gmail.com
-2012-04-29T14:06:20+00:00 heroku[api]: Deploy db11d20 by mario.talavera@gmail.com
-2012-04-29T14:06:20+00:00 heroku[web.1]: State changed from crashed to created
-2012-04-29T14:06:20+00:00 heroku[web.1]: State changed from created to starting
-2012-04-29T14:06:20+00:00 heroku[slugc]: Slug compilation finished
-2012-04-29T14:06:27+00:00 heroku[web.1]: Starting process with command `play run --http.port=20003 --%prod -Dprecompiled=true`
-2012-04-29T14:06:30+00:00 app[web.1]: 14:06:30,646 INFO  ~ Starting /app
-2012-04-29T14:06:30+00:00 app[web.1]: 14:06:30,651 INFO  ~ Module crud is available (/app/modules/crud)
-2012-04-29T14:06:30+00:00 app[web.1]: 14:06:30,653 INFO  ~ Module secure is available (/app/modules/secure)
-2012-04-29T14:06:30+00:00 app[web.1]: 14:06:30,857 INFO  ~ Application is precompiled
-2012-04-29T14:06:33+00:00 app[web.1]: 
-2012-04-29T14:06:33+00:00 app[web.1]: 14:06:33,005 ERROR ~ 
-2012-04-29T14:06:33+00:00 app[web.1]: @6a7m8pbgo
-2012-04-29T14:06:33+00:00 app[web.1]: JPA error
-2012-04-29T14:06:33+00:00 app[web.1]: A JPA error occurred (Cannot start a JPA manager without a properly configured database): No datasource configured
-2012-04-29T14:06:33+00:00 app[web.1]: Can't start in PROD mode with errors
-2012-04-29T14:06:33+00:00 app[web.1]: play.exceptions.JPAException: Cannot start a JPA manager without a properly configured database
-2012-04-29T14:06:33+00:00 app[web.1]: 
-2012-04-29T14:06:33+00:00 app[web.1]: 
-2012-04-29T14:06:33+00:00 app[web.1]: 	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:115)
-2012-04-29T14:06:33+00:00 app[web.1]: 	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
-2012-04-29T14:06:33+00:00 app[web.1]: 	at play.Play.start(Play.java:515)
-2012-04-29T14:06:33+00:00 app[web.1]: 	at play.server.Server.main(Server.java:158)
-2012-04-29T14:06:33+00:00 app[web.1]: 	at play.Play.init(Play.java:300)
-2012-04-29T14:06:33+00:00 app[web.1]: Caused by: java.lang.NullPointerException: No datasource configured
-2012-04-29T14:06:33+00:00 app[web.1]: 	... 5 more
-2012-04-29T14:06:33+00:00 app[web.1]: Exception in thread "main" play.exceptions.JPAException: Cannot start a JPA manager without a properly configured database
-2012-04-29T14:06:33+00:00 app[web.1]: 	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:115)
-2012-04-29T14:06:33+00:00 app[web.1]: 	at play.Play.start(Play.java:515)
-2012-04-29T14:06:33+00:00 app[web.1]: 	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:480)
-2012-04-29T14:06:33+00:00 app[web.1]: 	at play.Play.init(Play.java:300)
-2012-04-29T14:06:33+00:00 app[web.1]: 	at play.server.Server.main(Server.java:158)
-2012-04-29T14:06:33+00:00 app[web.1]: Caused by: java.lang.NullPointerException: No datasource configured
-2012-04-29T14:06:33+00:00 app[web.1]: 	... 5 more
-2012-04-29T14:06:33+00:00 app[web.1]: ~  _ __ | | __ _ _  _| |
-2012-04-29T14:06:33+00:00 app[web.1]: ~ |  __/|_|\____|\__ (_)
-2012-04-29T14:06:33+00:00 app[web.1]: ~        _            _ 
-2012-04-29T14:06:33+00:00 app[web.1]: ~ | '_ \| |/ _' | || |_|
-2012-04-29T14:06:33+00:00 app[web.1]: ~
-2012-04-29T14:06:33+00:00 app[web.1]: ~ |_|            |__/   
-2012-04-29T14:06:33+00:00 app[web.1]: ~ play! 1.2.4, http://www.playframework.org
-2012-04-29T14:06:33+00:00 app[web.1]: ~ framework ID is prod
-2012-04-29T14:06:33+00:00 app[web.1]: ~ Ctrl+C to stop
-2012-04-29T14:06:33+00:00 app[web.1]: ~
-2012-04-29T14:06:33+00:00 app[web.1]: ~ 
-2012-04-29T14:06:33+00:00 app[web.1]: 
-2012-04-29T14:06:34+00:00 heroku[web.1]: Process exited with status 0
-2012-04-29T14:06:34+00:00 heroku[web.1]: State changed from starting to crashed
-2012-04-29T14:06:35+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-29T14:06:36+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:452)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.list(Loader.java:2271)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1268)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+2012-04-29T21:29:05+00:00 app[web.1]: 	... 6 more
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.ejb.QueryImpl.getSingleResult(QueryImpl.java:274)
+2012-04-29T21:29:05+00:00 app[web.1]: Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'heroku_5251c1b0f8d2708.user' doesn't exist
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1986)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2140)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2626)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2111)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:208)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doQuery(Loader.java:802)
+2012-04-29T21:29:05+00:00 app[web.1]: 	... 14 more
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.getResultSet(Loader.java:1953)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:274)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2273)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doList(Loader.java:2533)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2276)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
+2012-04-29T21:29:05+00:00 app[web.1]: Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'heroku_5251c1b0f8d2708.user' doesn't exist
+2012-04-29T21:29:05+00:00 app[web.1]: 	at play.jobs.Job.call(Job.java:155)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1268)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at Invocation.Job(Play!)
+2012-04-29T21:29:05+00:00 app[web.1]: Caused by: javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not execute query
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:452)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at Bootstrap.doJob(Bootstrap.java:12)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.ejb.QueryImpl.getSingleResult(QueryImpl.java:307)
+2012-04-29T21:29:05+00:00 app[web.1]: 	... 6 more
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at play.db.jpa.JPQL.count(JPQL.java:22)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.ejb.QueryImpl.getSingleResult(QueryImpl.java:274)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1147)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at play.jobs.Job.call(Job.java:146)
+2012-04-29T21:29:05+00:00 app[web.1]: 	... 1 more
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+2012-04-29T21:29:05+00:00 app[web.1]: Exception in thread "main" play.exceptions.JavaExecutionException: org.hibernate.exception.SQLGrammarException: could not execute query
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1214)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.list(Loader.java:2271)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at models.User.count(User.java)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at play.jobs.Job.doJobWithResult(Job.java:50)
+2012-04-29T21:29:05+00:00 app[web.1]: Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:92)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doList(Loader.java:2536)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1986)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2140)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2626)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2111)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2273)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:208)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doQuery(Loader.java:802)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:274)
+2012-04-29T21:29:05+00:00 app[web.1]: 	... 14 more
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doList(Loader.java:2533)
+2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.getResultSet(Loader.java:1953)
+2012-04-29T21:29:05+00:00 app[web.1]: ~        _            _ 
+2012-04-29T21:29:05+00:00 app[web.1]: ~  _ __ | | __ _ _  _| |
+2012-04-29T21:29:05+00:00 app[web.1]: ~ | '_ \| |/ _' | || |_|
+2012-04-29T21:29:05+00:00 app[web.1]: ~ |  __/|_|\____|\__ (_)
+2012-04-29T21:29:05+00:00 app[web.1]: ~ |_|            |__/   
+2012-04-29T21:29:05+00:00 app[web.1]: ~
+2012-04-29T21:29:05+00:00 app[web.1]: ~ play! 1.2.4, http://www.playframework.org
+2012-04-29T21:29:05+00:00 app[web.1]: ~ framework ID is prod
+2012-04-29T21:29:05+00:00 app[web.1]: ~
+2012-04-29T21:29:05+00:00 app[web.1]: ~ Ctrl+C to stop
+2012-04-29T21:29:05+00:00 app[web.1]: ~ 
+2012-04-29T21:29:05+00:00 app[web.1]: 
+2012-04-29T21:29:06+00:00 heroku[web.1]: Process exited with status 0
+2012-04-29T21:29:08+00:00 heroku[web.1]: State changed from starting to crashed
+2012-04-29T21:29:09+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:29:09+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:30:54+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:30:54+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:33:06+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:33:07+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:37:31+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:37:31+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:39:08+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:39:09+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:39:10+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:39:10+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:39:11+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:39:11+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:39:12+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:39:12+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:39:12+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
+2012-04-29T21:39:13+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
