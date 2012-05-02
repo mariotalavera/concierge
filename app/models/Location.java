@@ -20,7 +20,6 @@ public class Location extends Model {
 	public String city;
 	@Required
 	public String state;
-	@Required
 	public String zip;
 	@Required
 	public String country;

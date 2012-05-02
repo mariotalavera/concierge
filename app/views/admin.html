@@ -41,6 +41,9 @@
 		            <li class="${request.controller == 'Companies' ? 'selected' : ''}">
 		                <a href="@{Companies.list()}">Companies</a>
 		            </li>
+		            <li class="${request.controller == 'AirCargo' ? 'selected' : ''}">
+		                <a href="@{AirCargoes.list()}">Air Cargo</a>
+		            </li>
 		        #{/secure.check}
 		            <li class="${request.controller == 'Users' ? 'selected' : ''}">
 		                <a href="@{Users.list()}">Users</a>

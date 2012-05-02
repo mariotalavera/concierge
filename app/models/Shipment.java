@@ -61,8 +61,4 @@ public class Shipment extends Model {
 		
 		return shipments;
 	}
-	
-
-
-	// todo push to heroku
 }

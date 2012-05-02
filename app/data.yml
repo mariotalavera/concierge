@@ -10,6 +10,30 @@ Company(oracle):
 Company(cadel):
   name: Cadel
   
+Company(alquilpanama):
+  name: Alquila Panamá
+  
+Company(frangoinvestments):
+  name: Frango Investments, S.A.
+  
+Company(cemex):
+  name: Cemex
+
+AirCargo(copa):
+  name: Copa Cargo Service
+  minimumCharge: 125
+  rateCaribbean: 1.98
+  rateSouthAmerica: 2.33
+  byWeightIn: kg
+  
+AirCargo(airCargo):
+  name: Air Cargo Service
+  
+AirCargo(hotexpress):
+  name: Hot Express
+  rateSouthAmerica: 2.50
+  byWeightIn: kg
+  
 User(mario):
   firstname: Mario
   lastname: Talavera
@@ -19,7 +43,7 @@ User(mario):
   company: oracle
   
 User(edgaradmin):
-  firstname: Edgar
+  firstname: Edgar (Admin)
   lastname: Aviles
   email: sales@cadeltruck.com
   password: admin
@@ -27,7 +51,7 @@ User(edgaradmin):
   company: cadel
     
 User(edgaruser):
-  firstname: Edgar
+  firstname: Edgar (User)
   lastname: Aviles
   email: sales@cadeltruck.com
   password: user
@@ -46,17 +70,38 @@ User(daniel):
   email: daniel@gmail.com
   password: secret
   company: jomar
-
-Location(newHome):
-  user: diego
+  
+User(luisossa):
+  firstname: Luis G
+  lastname: Ossa
+  email: daniel@gmail.com
+  password: secret
+  company: cemex
+  
+User(florencio):
+  firstname: Florencio
+  lastname: Icaza
+  email: daniel@gmail.com
+  password: secret
+  company: alquilpanama
+  
+Location(cemex1):
+  user: luisossa
   name: newHome
-  addresslineone: no street
-  addresslinetwo: null
-  city: Orlando
-  state: FL
-  zip: 32825
-  country: US
-  phone: 4075555555
+  addresslineone: Planta de Concreto Transistmica
+  city: Panamá
+  state: Panamá
+  country: Panamá
+
+Location(alquilapanamaloc1):
+  user: florencio
+  name: alquilapanamaloc1
+  addresslineone: Avenida Simon Bolivar Transistmica
+  addresslinetwo: Apartado 55-0877 Paitilla
+  city: Panamá
+  state: Panamá
+  country: Panamá
+  phone: 2613111
   
 Location(oldHome):
   user: diego
@@ -80,15 +125,32 @@ Location(jomar):
   country: US
   phone: 7877777777
 
-Location(bottomofsea):
-  user: mario
-  name: atlantic ocean
-  addresslineone: very very
-  addresslinetwo: deep
-  city: Atlantis
-  state: Unknown
-  zip: 000000
-  country: US
-  phone: 4078888888
+Location(cadelpanama):
+  user: edgaradmin
+  name: panama One
+  addresslineone: Suite # 1158, Plaza Albrook 
+  addresslinetwo: Canfield Ave.
+  city: Panamá
+  state: República de Panamá
+  country: República de Panamá
+  phone: 5078327533
 
+Location(cadelsanford):
+  user: edgaradmin
+  name: panama One
+  addresslineone: 3873 E SR 46 
+  city: Sanford
+  state: Florida
+  zip: 32771
+  country: US
+  phone: 4073242322
   
+Location(frankopanama):
+  user: edgaruser
+  addresslineone: Suite # 1158, Plaza Albrook 
+  addresslinetwo: Balboa Ancon
+  city: Panamá
+  state: República de Panamá
+  country: República de Panamá
+  phone: 5078327533
+    
