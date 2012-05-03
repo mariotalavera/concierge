@@ -34,6 +34,18 @@
 			<label for="content">Description </label>
         	<textarea name="object.description" id="object.description"></textarea>
         #{/crud.custom}
+
+        #{crud.custom 'aircargo'}
+	        #{if connectedUser.isAdmin == true}
+	        	<label for="aircargo">Shipper</label>
+		        #{select 'object.aircargo.id'}
+			        #{list items:availableAirCargo, as:'aircargo'}
+			            #{option aircargo.id}${aircargo.name}#{/option}
+					#{/list}
+		        #{/select}
+		    #{/if}
+        #{/crud.custom}
+        
         #{/crud.form}
         <p class="crudButtons">
             <input type="submit" name="_save" value="&{'crud.save', type.modelName}" />

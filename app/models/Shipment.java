@@ -44,6 +44,8 @@ public class Shipment extends Model {
 	public int guiano;
 	public int peso;
 	
+	@ManyToOne //(cascade=CascadeType.REFRESH, optional=true)
+	public AirCargo aircargo;
 	
 //	public Number getCost() {
 //		BigDecimal cost =
