@@ -17,6 +17,7 @@
         #{/crud.custom}
 
         #{crud.custom 'origin'}
+	        *{****
 	        #{if connectedUser.isAdmin}
 	        	<label for="origin">Origin</label>
 		        #{select 'object.origin.id'}
@@ -26,12 +27,16 @@
 		        #{/select}
 		    #{/if}
 		    #{else}
+		    ****}*
         	<label for="origin">Origin</label>
         	<input id="object_origin" type="text" name="object.origin" value="${object.origin}" disabled />
+		    *{****
 		    #{/else}
+		    ****}*
         #{/crud.custom}
 
         #{crud.custom 'destination'}
+	        *{****
 	        #{if connectedUser.isAdmin}
 	        	<label for="destination">Destination</label>
 		        #{select 'object.destination.id'}
@@ -41,9 +46,12 @@
 		        #{/select}
 		    #{/if}
 		    #{else}
+        	****}*
         	<label for="destination">Destination</label>
         	<input id="object_destination" type="text" name="object.destination" value="${object.destination}" disabled />
+		    *{****
 		    #{/else}
+		    ****}*
         #{/crud.custom}
 
         #{crud.custom 'aircargo'}
