@@ -1,100 +1,100 @@
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:452)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.list(Loader.java:2271)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1268)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
-2012-04-29T21:29:05+00:00 app[web.1]: 	... 6 more
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.ejb.QueryImpl.getSingleResult(QueryImpl.java:274)
-2012-04-29T21:29:05+00:00 app[web.1]: Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'heroku_5251c1b0f8d2708.user' doesn't exist
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.Util.getInstance(Util.java:382)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1986)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2140)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2626)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2111)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:208)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doQuery(Loader.java:802)
-2012-04-29T21:29:05+00:00 app[web.1]: 	... 14 more
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.getResultSet(Loader.java:1953)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:274)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2273)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doList(Loader.java:2533)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2276)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
-2012-04-29T21:29:05+00:00 app[web.1]: Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'heroku_5251c1b0f8d2708.user' doesn't exist
-2012-04-29T21:29:05+00:00 app[web.1]: 	at play.jobs.Job.call(Job.java:155)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1268)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at Invocation.Job(Play!)
-2012-04-29T21:29:05+00:00 app[web.1]: Caused by: javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not execute query
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:452)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at Bootstrap.doJob(Bootstrap.java:12)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.ejb.QueryImpl.getSingleResult(QueryImpl.java:307)
-2012-04-29T21:29:05+00:00 app[web.1]: 	... 6 more
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.Util.getInstance(Util.java:382)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:66)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at play.db.jpa.JPQL.count(JPQL.java:22)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.ejb.QueryImpl.getSingleResult(QueryImpl.java:274)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1147)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at play.jobs.Job.call(Job.java:146)
-2012-04-29T21:29:05+00:00 app[web.1]: 	... 1 more
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
-2012-04-29T21:29:05+00:00 app[web.1]: Exception in thread "main" play.exceptions.JavaExecutionException: org.hibernate.exception.SQLGrammarException: could not execute query
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1214)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.list(Loader.java:2271)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at models.User.count(User.java)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at play.jobs.Job.doJobWithResult(Job.java:50)
-2012-04-29T21:29:05+00:00 app[web.1]: Caused by: org.hibernate.exception.SQLGrammarException: could not execute query
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:92)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doList(Loader.java:2536)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1986)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2140)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2626)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2111)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2273)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:208)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doQuery(Loader.java:802)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:274)
-2012-04-29T21:29:05+00:00 app[web.1]: 	... 14 more
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doList(Loader.java:2533)
-2012-04-29T21:29:05+00:00 app[web.1]: 	at org.hibernate.loader.Loader.getResultSet(Loader.java:1953)
-2012-04-29T21:29:05+00:00 app[web.1]: ~        _            _ 
-2012-04-29T21:29:05+00:00 app[web.1]: ~  _ __ | | __ _ _  _| |
-2012-04-29T21:29:05+00:00 app[web.1]: ~ | '_ \| |/ _' | || |_|
-2012-04-29T21:29:05+00:00 app[web.1]: ~ |  __/|_|\____|\__ (_)
-2012-04-29T21:29:05+00:00 app[web.1]: ~ |_|            |__/   
-2012-04-29T21:29:05+00:00 app[web.1]: ~
-2012-04-29T21:29:05+00:00 app[web.1]: ~ play! 1.2.4, http://www.playframework.org
-2012-04-29T21:29:05+00:00 app[web.1]: ~ framework ID is prod
-2012-04-29T21:29:05+00:00 app[web.1]: ~
-2012-04-29T21:29:05+00:00 app[web.1]: ~ Ctrl+C to stop
-2012-04-29T21:29:05+00:00 app[web.1]: ~ 
-2012-04-29T21:29:05+00:00 app[web.1]: 
-2012-04-29T21:29:06+00:00 heroku[web.1]: Process exited with status 0
-2012-04-29T21:29:08+00:00 heroku[web.1]: State changed from starting to crashed
-2012-04-29T21:29:09+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:29:09+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:30:54+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:30:54+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:33:06+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:33:07+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:37:31+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:37:31+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:39:08+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:39:09+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:39:10+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:39:10+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:39:11+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:39:11+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:39:12+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:39:12+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:39:12+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/ dyno= queue= wait= service= status=503 bytes=
-2012-04-29T21:39:13+00:00 heroku[router]: Error H10 (App crashed) -> GET furious-mist-5726.herokuapp.com/favicon.ico dyno= queue= wait= service= status=503 bytes=
+2012-05-03T10:35:15+00:00 app[web.1]: Internal Server Error (500) for request GET /shipments/list
+2012-05-03T10:35:15+00:00 app[web.1]: 
+2012-05-03T10:35:15+00:00 app[web.1]: @6a8o9cm35
+2012-05-03T10:35:15+00:00 app[web.1]: Execution exception (In /app/models/Shipment.java around line 59)
+2012-05-03T10:35:15+00:00 app[web.1]: JPAQueryException occured : Error while executing query from models.Shipment where user_id = ?: Unknown column 'shipment0_.aircargo_id' in 'field list'
+2012-05-03T10:35:15+00:00 app[web.1]: 
+2012-05-03T10:35:15+00:00 app[web.1]: play.exceptions.JavaExecutionException: Error while executing query <strong>from models.Shipment where user_id = ?</strong>: Unknown column 'shipment0_.aircargo_id' in 'field list'
+2012-05-03T10:35:15+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:231)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at Invocation.HTTP Request(Play!)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at play.db.jpa.GenericModel$JPAQuery.fetch(GenericModel.java:369)
+2012-05-03T10:35:15+00:00 app[web.1]: Caused by: play.db.jpa.JPABase$JPAQueryException: Error while executing query <strong>from models.Shipment where user_id = ?</strong>: Unknown column 'shipment0_.aircargo_id' in 'field list'
+2012-05-03T10:35:15+00:00 app[web.1]: 	at models.Shipment.findByUser(Shipment.java:59)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at controllers.Shipments.list(Shipments.java:27)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:548)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:478)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:502)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:473)
+2012-05-03T10:35:15+00:00 app[web.1]: 	... 1 more
+2012-05-03T10:35:15+00:00 app[web.1]: Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'shipment0_.aircargo_id' in 'field list'
+2012-05-03T10:35:15+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1986)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2140)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2626)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2111)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2273)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:208)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doQuery(Loader.java:802)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:274)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2276)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at org.hibernate.loader.Loader.getResultSet(Loader.java:1953)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at org.hibernate.loader.Loader.list(Loader.java:2271)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doList(Loader.java:2533)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:452)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1268)
+2012-05-03T10:35:15+00:00 app[web.1]: 	... 8 more
+2012-05-03T10:35:15+00:00 app[web.1]: 	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:246)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at play.db.jpa.GenericModel$JPAQuery.fetch(GenericModel.java:367)
+2012-05-03T10:35:15+00:00 app[web.1]: 	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+2012-05-03T10:35:15+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=17ms status=404 bytes=313
+2012-05-03T10:35:24+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/locations/list dyno=web.1 queue=0 wait=0ms service=155ms status=200 bytes=7783
+2012-05-03T10:35:25+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/companies/list dyno=web.1 queue=0 wait=0ms service=64ms status=200 bytes=3789
+2012-05-03T10:35:28+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/aircargoes/list dyno=web.1 queue=0 wait=0ms service=65ms status=200 bytes=3242
+2012-05-03T10:35:29+00:00 app[web.1]: 10:35:29,821 WARN  ~ SQL Error: 1054, SQLState: 42S22
+2012-05-03T10:35:29+00:00 app[web.1]: 10:35:29,821 ERROR ~ Unknown column 'shipment0_.aircargo_id' in 'field list'
+2012-05-03T10:35:29+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/shipments/list dyno=web.1 queue=0 wait=0ms service=56ms status=500 bytes=417
+2012-05-03T10:35:29+00:00 app[web.1]: 10:35:29,839 ERROR ~ 
+2012-05-03T10:35:29+00:00 app[web.1]: Internal Server Error (500) for request GET /shipments/list
+2012-05-03T10:35:29+00:00 app[web.1]: 
+2012-05-03T10:35:29+00:00 app[web.1]: 
+2012-05-03T10:35:29+00:00 app[web.1]: @6a8o9cm3d
+2012-05-03T10:35:29+00:00 app[web.1]: Execution exception (In /app/models/Shipment.java around line 59)
+2012-05-03T10:35:29+00:00 app[web.1]: 
+2012-05-03T10:35:29+00:00 app[web.1]: JPAQueryException occured : Error while executing query from models.Shipment where user_id = ?: Unknown column 'shipment0_.aircargo_id' in 'field list'
+2012-05-03T10:35:29+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:231)
+2012-05-03T10:35:29+00:00 app[web.1]: play.exceptions.JavaExecutionException: Error while executing query <strong>from models.Shipment where user_id = ?</strong>: Unknown column 'shipment0_.aircargo_id' in 'field list'
+2012-05-03T10:35:29+00:00 app[web.1]: 	at Invocation.HTTP Request(Play!)
+2012-05-03T10:35:29+00:00 app[web.1]: Caused by: play.db.jpa.JPABase$JPAQueryException: Error while executing query <strong>from models.Shipment where user_id = ?</strong>: Unknown column 'shipment0_.aircargo_id' in 'field list'
+2012-05-03T10:35:29+00:00 app[web.1]: 	at play.db.jpa.GenericModel$JPAQuery.fetch(GenericModel.java:369)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at models.Shipment.findByUser(Shipment.java:59)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at controllers.Shipments.list(Shipments.java:27)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:548)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:478)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:502)
+2012-05-03T10:35:29+00:00 app[web.1]: 	... 1 more
+2012-05-03T10:35:29+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:473)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at com.mysql.jdbc.Util.handleNewInstance(Util.java:407)
+2012-05-03T10:35:29+00:00 app[web.1]: Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'shipment0_.aircargo_id' in 'field list'
+2012-05-03T10:35:29+00:00 app[web.1]: 	at com.mysql.jdbc.Util.getInstance(Util.java:382)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3525)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3593)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2140)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2626)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1986)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2111)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2273)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:208)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at org.hibernate.loader.Loader.getResultSet(Loader.java:1953)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:274)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doQuery(Loader.java:802)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2276)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at org.hibernate.loader.Loader.doList(Loader.java:2533)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at org.hibernate.loader.Loader.list(Loader.java:2271)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:452)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1268)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:246)
+2012-05-03T10:35:29+00:00 app[web.1]: 	at play.db.jpa.GenericModel$JPAQuery.fetch(GenericModel.java:367)
+2012-05-03T10:35:29+00:00 app[web.1]: 	... 8 more
+2012-05-03T10:35:30+00:00 heroku[router]: GET furious-mist-5726.herokuapp.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=6ms status=404 bytes=313

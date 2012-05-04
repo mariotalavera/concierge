@@ -16,6 +16,36 @@
         	<textarea name="object.description" id="object.description">${object.description}</textarea>
         #{/crud.custom}
 
+        #{crud.custom 'origin'}
+	        #{if connectedUser.isAdmin}
+	        	<label for="origin">Origin</label>
+		        #{select 'object.origin.id'}
+			        #{list items:availableLocations, as:'origin'}
+			            #{option origin.id}${origin.name}#{/option}
+					#{/list}
+		        #{/select}
+		    #{/if}
+		    #{else}
+        	<label for="origin">Origin</label>
+        	<input id="object_origin" type="text" name="object.origin" value="${object.origin}" disabled />
+		    #{/else}
+        #{/crud.custom}
+
+        #{crud.custom 'destination'}
+	        #{if connectedUser.isAdmin}
+	        	<label for="destination">Destination</label>
+		        #{select 'object.destination.id'}
+			        #{list items:availableLocations, as:'destination'}
+			            #{option destination.id}${destination.name}#{/option}
+					#{/list}
+		        #{/select}
+		    #{/if}
+		    #{else}
+        	<label for="destination">Destination</label>
+        	<input id="object_destination" type="text" name="object.destination" value="${object.destination}" disabled />
+		    #{/else}
+        #{/crud.custom}
+
         #{crud.custom 'aircargo'}
 	        #{if connectedUser.isAdmin}
 	        	<label for="aircargo">Shipper</label>

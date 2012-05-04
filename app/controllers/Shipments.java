@@ -45,15 +45,18 @@ public class Shipments extends CRUD {
 	
     public static void show(Long id) throws Exception {
         ObjectType type = ObjectType.get(getControllerClass());
-        User connectedUser = User.find("byEmail", Security.connected()).first();
+		String userEmail = Security.connected();
+        User connectedUser = User.find("byEmail", userEmail).first();
         List<AirCargo> availableAirCargo = AirCargo.findAll();
+        List<Location> availableLocations = Location.findByUser(userEmail);
+
         notFoundIfNull(type);
         Model object = Shipment.findById(id);
         notFoundIfNull(object);   
         try {
-            render(type, object, connectedUser, availableAirCargo);
+            render(type, object, connectedUser, availableAirCargo, availableLocations);
         } catch (TemplateNotFoundException e) {
-            render("CRUD/show.html", type, object, connectedUser, availableAirCargo);
+            render("CRUD/show.html", type, object, connectedUser, availableAirCargo, availableLocations);
         }
     }
 
