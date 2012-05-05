@@ -1,9 +1,0 @@
-10 Apr 2012 06:37:13,626 INFO  ~ Starting C:\Users\mayin\workspace\concierge
-10 Apr 2012 06:37:13,633 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.japid)
-10 Apr 2012 06:37:13,635 INFO  ~ Module japid is available (C:\dev\play-1.2.4\modules\japid-0.9.3.4)
-10 Apr 2012 06:37:14,967 INFO  ~ JapidPlugin.onload().
-10 Apr 2012 06:37:14,968 INFO  ~ [Japid] play in DEV mode. Detecting changes...
-10 Apr 2012 06:37:15,003 WARN  ~ You're running Play! in DEV mode
-10 Apr 2012 06:37:15,182 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-10 Apr 2012 06:37:18,474 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
-10 Apr 2012 06:37:20,241 INFO  ~ Application 'concierge' is now started !
