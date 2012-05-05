@@ -10,12 +10,16 @@
     </div>
 
     <div id="crudListTable">
+    	*{****
     	#{if user.isAdmin}
 	        #{crud.table fields:['name', 'zip', 'user'] /}
     	#{/if}
     	#{else}
+    	****}*
 	        #{crud.table fields:['name', 'zip'] /}
+    	*{****
     	#{/else}
+    	****}*
     </div>
 
     <div id="crudListPagination">

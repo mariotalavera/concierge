@@ -31,10 +31,6 @@ public class Shipments extends CRUD {
         render(type, objects, count, totalCount, page, orderBy, order, user);
     }
 
-    // TODO shipment show have only my locations
-    // TODO change color scheme
-    // TODO shipment created at like client. hidden and default, in this case, to currentdate
-    
 	public static void blank() {
 		String userEmail = Security.connected();
         User connectedUser = User.find("byEmail", userEmail).first();
@@ -60,11 +56,6 @@ public class Shipments extends CRUD {
         }
     }
 
-    // TODO - have to properly extend show from framework
-//	public static void show() {
-//        render(connectedUser);
-//    }
-	
 	public static void form() {
 		blank();
     }

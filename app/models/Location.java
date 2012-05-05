@@ -59,9 +59,9 @@ public class Location extends Model {
 		User user = User.find("byEmail", email).first();
 		
 		List<Location> locations = Location.find("byUser_id",user.id).fetch();
-		if(user.isAdmin) {
-			locations = Location.findAll();
-		}
+//		if(user.isAdmin) {
+//			locations = Location.findAll();
+//		}
 		
 		return locations;
 	}
