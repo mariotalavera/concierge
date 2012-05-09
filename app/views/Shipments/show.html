@@ -54,20 +54,13 @@
 		    ****}*
         #{/crud.custom}
 
-        #{crud.custom 'aircargo'}
-	        #{if connectedUser.isAdmin}
+		
+		#{if connectedUser.isAdmin == false}
+	        #{crud.custom 'aircargo'}
 	        	<label for="aircargo">Shipper</label>
-		        #{select 'object.aircargo.id'}
-			        #{list items:availableAirCargo, as:'aircargo'}
-			            #{option aircargo.id}${aircargo.name}#{/option}
-					#{/list}
-		        #{/select}
-		    #{/if}
-		    #{else}
-        	<label for="aircargo">Shipper</label>
-        	<input id="object_aircargo" type="text" name="object.aircargo" value="${object.aircargo}" disabled />
-		    #{/else}
-        #{/crud.custom}
+	        	<input id="object_aircargo" type="text" name="object.aircargo" value="${object.aircargo}" disabled />
+	        #{/crud.custom}
+		#{/if}
         #{/crud.form}
         
         <p class="crudButtons">
@@ -76,7 +69,7 @@
     #{/form}
     </div>
 
-	#{if object.aircargo = null}
+	#{if object.aircargo == null}
     #{form @delete(object._key())}
         <p class="crudDelete">
             <input type="submit" value="&{'crud.delete', type.modelName}" />
