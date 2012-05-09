@@ -7,5 +7,6 @@ test-result/
 lib/
 tmp/
 modules/
+.idea/
 logs.txt
 *.log

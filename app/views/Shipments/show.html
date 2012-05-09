@@ -76,10 +76,12 @@
     #{/form}
     </div>
 
+	#{if object.aircargo = null}
     #{form @delete(object._key())}
         <p class="crudDelete">
             <input type="submit" value="&{'crud.delete', type.modelName}" />
         </p>
     #{/form}
+    #{/if}
 
 </div>
