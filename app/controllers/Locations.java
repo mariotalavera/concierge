@@ -28,9 +28,10 @@ public class Locations extends CRUD {
         }
 
         User user = User.find("byEmail", Security.connected()).first();
-
+        Long count = Location.count("byUser", user);
+        
         List<Location> objects = Location.findByUser(user.email);
-        Long count = type.count(search, searchFields, (String) request.args.get("where"));
+        
         Long totalCount = type.count(null, null, (String) request.args.get("where"));
         
         render(type, objects, count, totalCount, page, orderBy, order, user);

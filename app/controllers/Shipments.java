@@ -22,10 +22,14 @@ public class Shipments extends CRUD {
         }
 
         User user = User.find("byEmail", Security.connected()).first();
-        String userEmail = user.email;
+        Long count = Shipment.count("byUser", user);
+        
+        List<Shipment> objects = Shipment.findByUser(user.email);
+        if (user.isAdmin) {
+        	count = type.count(search, searchFields, (String) request.args.get("where"));
+        }
 
-        List<Shipment> objects = Shipment.findByUser(userEmail);
-        Long count = type.count(search, searchFields, (String) request.args.get("where"));
+        //Long count = type.count(search, searchFields, (String) request.args.get("where"));
         Long totalCount = type.count(null, null, (String) request.args.get("where"));
         
         render(type, objects, count, totalCount, page, orderBy, order, user);

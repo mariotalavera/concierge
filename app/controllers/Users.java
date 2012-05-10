@@ -19,13 +19,14 @@ public class Users extends CRUD {
         }
 
         User user = User.find("byEmail", Security.connected()).first();
-
+        Long count = User.count("byCompany", user.company);
+        		
         List<User> objects = User.find("byCompany", user.company).fetch();
         if (user.isAdmin) {
             objects = User.findAll();
+            count = type.count(search, searchFields, (String) request.args.get("where"));
         }
 
-        Long count = type.count(search, searchFields, (String) request.args.get("where"));
         Long totalCount = type.count(null, null, (String) request.args.get("where"));
         
         render(type, objects, count, totalCount, page, orderBy, order, user);
