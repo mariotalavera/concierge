@@ -1,6 +1,7 @@
 package controllers;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -8,6 +9,7 @@ import javax.persistence.OneToMany;
 
 import controllers.CRUD.ObjectType;
 
+import models.Company;
 import models.Location;
 import models.User;
 import play.*;
@@ -28,9 +30,31 @@ public class Locations extends CRUD {
         }
 
         User user = User.find("byEmail", Security.connected()).first();
-        Long count = Location.count("byUser", user);
+
+        //1 find company of user connected
+        //2 find all users of company connected
+        List<User> companyUsers = User.find("byCompany", user.company).fetch();
         
-        List<Location> objects = Location.findByUser(user.email);
+        //3 create a list of locations
+        List<Location> allLocations = new ArrayList();
+        
+        //4 loop users
+        for (int i = 0; i < companyUsers.size(); i++) {
+        	
+        	User thisUser = companyUsers.get(i);
+        	
+        	List<Location> userLocations = Location.find("byUser", thisUser).fetch();
+        	
+        	//5 find locations for user being looped
+        	//6 add user locations to locations list
+        	if (userLocations != null) {
+        		allLocations.addAll(userLocations);
+        	}
+        }
+        
+        int count = allLocations.size(); //Location.count("byUser", user);
+        
+        List<Location> objects = allLocations;
         
         Long totalCount = type.count(null, null, (String) request.args.get("where"));
         
