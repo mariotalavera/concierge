@@ -29,7 +29,6 @@ public class Shipments extends CRUD {
         	count = type.count(search, searchFields, (String) request.args.get("where"));
         }
 
-        //Long count = type.count(search, searchFields, (String) request.args.get("where"));
         Long totalCount = type.count(null, null, (String) request.args.get("where"));
         
         render(type, objects, count, totalCount, page, orderBy, order, user);

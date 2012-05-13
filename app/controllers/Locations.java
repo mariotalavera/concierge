@@ -31,31 +31,10 @@ public class Locations extends CRUD {
 
         User user = User.find("byEmail", Security.connected()).first();
 
-        //1 find company of user connected
-        //2 find all users of company connected
-        List<User> companyUsers = User.find("byCompany", user.company).fetch();
+        List<Location> objects = Location.findByUser(user.email);
         
-        //3 create a list of locations
-        List<Location> allLocations = new ArrayList();
-        
-        //4 loop users
-        for (int i = 0; i < companyUsers.size(); i++) {
-        	
-        	User thisUser = companyUsers.get(i);
-        	
-        	List<Location> userLocations = Location.find("byUser", thisUser).fetch();
-        	
-        	//5 find locations for user being looped
-        	//6 add user locations to locations list
-        	if (userLocations != null) {
-        		allLocations.addAll(userLocations);
-        	}
-        }
-        
-        int count = allLocations.size(); //Location.count("byUser", user);
-        
-        List<Location> objects = allLocations;
-        
+        int count = objects.size();
+
         Long totalCount = type.count(null, null, (String) request.args.get("where"));
         
         render(type, objects, count, totalCount, page, orderBy, order, user);
