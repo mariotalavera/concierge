@@ -41,6 +41,9 @@
 		            <a href="">My tasks</a>
 		        </li>
 ****}*		    
+		            <li class="${request.controller == 'QuoteRequests' ? 'selected' : ''}">
+		                <a href="@{QuoteRequests.list()}">Quote Requests</a>
+		            </li>
 		            <li class="${request.controller == 'Shipments' ? 'selected' : ''}">
 		                <a href="@{Shipments.list()}">Shipments</a>
 		            </li>

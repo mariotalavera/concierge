@@ -1,0 +1,31 @@
+#{extends 'CRUD/layout.html' /}
+#{set title:messages.get('crud.blank.title', type.modelName) /}
+
+<div id="crudBlank" class="${type.name}">
+
+    <h2 id="crudBlankTitle">&{'crud.blank.title', type.modelName}</h2>
+
+    <div class="objectForm">
+    #{form action:@create(), enctype:'multipart/form-data'}
+        #{crud.form}
+        
+        #{crud.custom 'year'}
+        	<label for="year">Year</label>
+	        #{select 'object.year'}
+		        #{list items:availableYears, as:'year'}
+		            #{option year}${year}#{/option}
+				#{/list}
+	        #{/select}
+        #{/crud.custom}
+        
+        #{/crud.form}
+        
+        <p class="crudButtons">
+            <input type="submit" name="_save" value="&{'crud.save', type.modelName}" />
+            <input type="submit" name="_saveAndContinue" value="&{'crud.saveAndContinue', type.modelName}" />
+            <input type="submit" name="_saveAndAddAnother" value="&{'crud.saveAndAddAnother', type.modelName}" />
+        </p>
+    #{/form}
+    </div>
+
+</div>

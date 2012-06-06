@@ -18,7 +18,7 @@ public class LocationTest extends UnitTest {
 
 		List<Location> diegoLocations = Location.find("byUser", diego).fetch();
 
-		assertEquals(2, diegoLocations.size());
+		assertEquals(1, diegoLocations.size());
 		
 		Location newLocation = diegoLocations.get(0);
 		assertNotNull(newLocation);

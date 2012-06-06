@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<testsuite failures="0" time="0.196" errors="0" skipped="0" tests="1" name="LocationTest">
-  <testcase classname="LocationTest" name="createLocations" time="0.196">
-      </testcase>
+<testsuite failures="1" time="0.08" errors="0" skipped="0" tests="0" name="LocationTest">
+  <testcase classname="LocationTest" name="createLocations" time="0.08">
+                  <failure type="" message="Failure, expected:&lt;[4417 Andover Cay]&gt; but was:&lt;[no street]&gt;">
+        <![CDATA[
+          In /test/LocationTest.java, line 25
+          
+              		assertEquals(&quot;4417 Andover Cay&quot;,newLocation.addresslineone); :
+          
+        ]]>
+        </failure>
+        }
+                  </testcase>
 </testsuite>
