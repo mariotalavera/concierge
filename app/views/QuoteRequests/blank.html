@@ -18,6 +18,24 @@
 	        #{/select}
         #{/crud.custom}
         
+        #{crud.custom 'make'}
+        	<label for="make">Make</label>
+	        #{select 'object.make'}
+		        #{list items:truckMakes, as:'make'}
+		            #{option make}${make}#{/option}
+				#{/list}
+	        #{/select}
+        #{/crud.custom}
+        
+        #{crud.custom 'engineMake'}
+        	<label for="engine">Engine</label>
+	        #{select 'object.engine'}
+		        #{list items:engineMakes, as:'engine'}
+		            #{option engine}${engine}#{/option}
+				#{/list}
+	        #{/select}
+        #{/crud.custom}
+        
         #{/crud.form}
         
         <p class="crudButtons">
